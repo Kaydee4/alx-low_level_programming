@@ -1,22 +1,21 @@
 #include <stdio.h>
 
 /**
- * main - main function
- *
- * return: 0 on success, non-zero on failure
- */
-
+* main - First line
+*
+* Return: Always 0 (Success)
+*/
 int main(void)
 {
-	int i;
-
-	for (i = 0 ; i < 16 ; i++)
-	{
-		if (i < 10)
-		putchar(i + '0');
-		else
-		putchar(i - 10 + 'a');
-	}
-	putchar('\n');
-	return (0);
+char digit;
+for (digit = '0'; digit <= '9'; digit++)
+{
+putchar(digit);
+}
+for (digit = 'a'; digit <= 'f'; digit++)
+{
+putchar(digit);
+}
+putchar('\n');
+return (0);
 }
